@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS page</title>
+    <script>
+        window.alert("i enjoy Basketball");
+        console.log("I enjoy orginizing my room");
+    </script>
+</head>
+<body>  
+    <h1>java-script is cool</h1>
+    <p>i like doing ptec stuff</p>
+    <p>open console to see more</p>
+    <script>
+        function changeText() {
+            document.getElementById("myparagraph").innerHTML = "I told you not to click it";
+        }function changingfunction() {
+            document.getElementById("differnt-id").innerText = "did you know that australia is wider than the moon";
+        }
+    </script>
+    <script>document.write("hello?")</script>
+    <p id="myparagraph"> this text will change when you click the button</p>
+    <button onclick="changeText()">DONT CLICK</button>
+    <br>
+    <p id="differnt-id">Want to know a fun fact</p>
+    <button onclick="changingfunction()">CLICK HERE</button>
+    <br>
+    <br>
+    <button ondblclick="document.getElementById('my-img').src='img/pexels-fotios-photos-1322360.jpg'">turn ON</button>
+    <img id="my-img" src="img/pexels-fotios-photos-1322360.jpg" width="100px"/>
+    <button ondblclick="document.getElementById('my-img').src='img/pexels-ekaterina-bolovtsova-6373210.jpg'">turn OFF</button>
+</body>
+</html>
