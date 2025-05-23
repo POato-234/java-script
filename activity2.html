@@ -59,6 +59,10 @@
             text-align: center;
         }
     </style>
+    <script>
+        window.alert("are you ready to learn about basketball?");
+        console.log("basketball");
+    </script>
 </head>
 <body>
     <header>
@@ -96,12 +100,13 @@
         document.getElementById("testing").innerHTML =
     "great choice " + person + " is a great player";
         }
-}
+        console.log("great choice " + person + " is a great player");
+        }
 </script>
 <div class="new-div">
     <h1>What is Basketball</h1>
     <p>Basketball is a popular team sport where two teams try to score points by shooting a ball through a hoop 10 feet high. Players dribble, pass, and defend while aiming to outscore their opponents. Invented in 1891 by Dr. James Naismith, basketball is fast-paced and played worldwide with games typically lasting four quarters</p>
-    <img src="https://cdn.nba.com/manage/2025/05/GettyImages-2201095055-1-scaled.jpg" width="750px" alt="">
+    <img src="https://cdn.nba.com/manage/2025/05/GettyImages-2201095055-1-scaled.jpg" width="750px" alt="A BASKETBALL  game with players in action">
     <p >who i your favorite basketball Player</p>
     <button onclick="myFunction()"> Click</button>
     <p id="testing"></p>
@@ -112,12 +117,38 @@
     <img id="my-img" src="img/knicks.png" width="100px"/>
     <button onclick="document.getElementById('my-img').src='img/knicks.png'">NY NICKS</button>
 </div>
-
+<div class="new-div">
+    <button onclick="toggleVisibility()">click here</button>
+<button id="myButton">BASKETBALL is the best sport</button>
+<script>
+    function toggleVisibility() {
+    const button = document.getElementById("myButton"); /* Get the element with id 'myButton' */
+    if (button.style.display === "none") {  /* Check if button is currently hidden */
+        button.style.display = "inline";  /* Show the button if hidden */
+    } else {
+        button.style.display = "none"; /* Hide the button if visible */
+    }
+    console.log("BASKETBALL is the best sport");
+    }
+</script>
+<br>
+<a href="https://www.youtube.com/watch?v=lvCZqMf_z20&t=172s">watch video HERE</a>
+</div>
+<div class="new-div">
+    <p id="demo1">The First Basketball Game Had Only 13 Rules.</p>
+    <button type="button" onclick="document.getElementById('demo1').style.display='none'">WOW</button>
+</div>
+<br>
+<div class="new-div">
+    <p id="myParagraph">Basketball is the only major sport that was invented in the United States.</p>
+    <button onclick="document.getElementById('myParagraph').style.cssText='fontSize: 10px; font-family: times new roman; color:purple;'">Style It Up!</button>
+</div>
 
     <div>
-        <p>WORRNING DO NOT CLICK THE BUTTON</p>
+        <p style="color: white;">WORRNING DO NOT CLICK THE BUTTON</p>
         <button type="button" onclick="document.write('I told you not to click it')">DONT CLICK</button>
     </div>
+
     
 </body>
 </html>
